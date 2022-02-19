@@ -1,0 +1,79 @@
+@use "global" as *;
+
+/* キャンパス設定 */
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+.box {
+  width: 500px;
+  height: 1500px;
+  margin: 0 auto;
+  //   margin: calc(50vh - 150px) auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px #999;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* アニメーション設定 */
+.arrowWrap {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  height: 200px;
+}
+
+.arrowInner p {
+  font-size: 12px;
+  text-align: end;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  margin: 3rem 0 0 0;
+}
+
+.arrow {
+  width: 1px;
+  height: 100px;
+  margin: 50px auto 0;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow::before {
+  content: "";
+  width: 1px;
+  height: 100px;
+  margin: 50px auto 0;
+  background-color: #000;
+  position: absolute;
+  top: -150px;
+  //   top: 0;
+  left: 0;
+  -webkit-animation: arrow 2.5s ease 0s infinite normal;
+  animation: arrow 2.5s ease 0s infinite normal;
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  60% {
+    -webkit-transform: translate3d(-50%, 100pxpx, 0);
+    transform: translate3d(-50%, 100px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-50%, 100px, 0);
+    transform: translate3d(-50%, 100px, 0);
+  }
+}
