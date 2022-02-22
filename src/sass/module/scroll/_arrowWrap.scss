@@ -1,0 +1,9 @@
+@use "global" as *;
+
+/* アニメーション設定 */
+.arrowWrap {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  height: 200px;
+}

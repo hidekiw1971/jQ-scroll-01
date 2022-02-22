@@ -195,45 +195,7 @@ select::-ms-expand {
   color: #fff;
 }
 
-/* キャンパス設定 */
-html,
-body {
-  height: 100%;
-}
-
-html {
-  background: #eee;
-}
-
-.box {
-  width: 500px;
-  height: 1500px;
-  margin: 0 auto;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 30px #999;
-          box-shadow: 0 2px 30px #999;
-  background: #fff;
-  position: relative;
-  overflow: hidden;
-}
-
 /* アニメーション設定 */
-.arrowWrap {
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  height: 200px;
-}
-
-.arrowInner p {
-  font-size: 12px;
-  text-align: end;
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-  margin: 48px 0 0 0;
-  margin: 3rem 0 0 0;
-}
-
 .arrow {
   width: 1px;
   height: 100px;
@@ -262,7 +224,7 @@ html {
     transform: translate3d(-50%, 0, 0);
   }
   60% {
-    -webkit-transform: translate3d(-50%, 100pxpx, 0);
+    -webkit-transform: translate3d(-50%, 100px, 0);
     transform: translate3d(-50%, 100px, 0);
   }
   100% {
@@ -277,12 +239,42 @@ html {
     transform: translate3d(-50%, 0, 0);
   }
   60% {
-    -webkit-transform: translate3d(-50%, 100pxpx, 0);
+    -webkit-transform: translate3d(-50%, 100px, 0);
     transform: translate3d(-50%, 100px, 0);
   }
   100% {
     -webkit-transform: translate3d(-50%, 100px, 0);
     transform: translate3d(-50%, 100px, 0);
   }
+}
+/* アニメーション設定 */
+.arrowInner p {
+  font-size: 12px;
+  text-align: end;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  margin: 48px 0 0 0;
+  margin: 3rem 0 0 0;
+}
+
+/* アニメーション設定 */
+.arrowWrap {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  height: 200px;
+}
+
+/* キャンパス設定 */
+.box {
+  width: 500px;
+  height: 1000px;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 30px #999;
+          box-shadow: 0 2px 30px #999;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */

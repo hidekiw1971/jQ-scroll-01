@@ -1,0 +1,10 @@
+@use "global" as *;
+
+/* アニメーション設定 */
+.arrowInner p {
+  font-size: 12px;
+  text-align: end;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  margin: 3rem 0 0 0;
+}
